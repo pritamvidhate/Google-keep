@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  /* line-height: 100%; */
+  background-color: #fbbc05;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: start;
+  padding-left: 50px;
+  color: #fff;
+  box-shadow: 5px 5px 15px -5px;
+
+  line-height: 3em;
 }
 
-.App-link {
-  color: #61dafb;
+.main_note {
+  width: 500px;
+  padding: 5px 10px 5px 10px;
+  margin: 20px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  min-height: 50px;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 5px 5px 15px -5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.MuiButton-root {
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  bottom: -28px;
+  left: 400px;
+  cursor: pointer;
+  background-color: #fff !important;
+  box-shadow: 5px 5px 15px -5px;
+  border-radius: 50px !important;
+}
+
+.MuiButton-root .plus-sign {
+  font-size: 45px;
+  font-weight: 900;
+  color: #fbbc05;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
+
+.MuiButton-root:hover {
+  background: #fbbc05 !important;
+}
+
+.MuiButton-root:hover .plus-sign {
+  color: #fff;
+  background: transparent;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note .btn {
+  float: right;
+  margin-right: 10px;
+  color: #fbbc05;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.deleteIcon {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+.note .btn:hover {
+  background-color: #fbbc05;
+}
+
+.note .btn:hover .deleteIcon {
+  color: #fff;
 }
