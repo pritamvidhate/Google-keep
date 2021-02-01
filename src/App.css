@@ -6,10 +6,9 @@
 
 .header {
   width: 100%;
-  /* line-height: 100%; */
   background-color: #fbbc05;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   padding-left: 50px;
   color: #fff;
   box-shadow: 5px 5px 15px -5px;
@@ -37,7 +36,7 @@ input {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 10px 0;
   font-weight: bold;
 }
@@ -48,10 +47,34 @@ textarea {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 10px 0;
 }
 
+.plus-sign {
+  color: #fbbc05;
+  position: absolute;
+  left: 400px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -5px;
+  border-radius: 50px !important;
+  margin-bottom: 40px;
+}
+
+.MuiButton-root .plus-sign {
+  font-size: 35px;
+}
+
+.MuiButton-root:hover .plus-sign {
+  color: #fff;
+  background: transparent;
+}
+
+.MuiButton-root:hover .plus-sign {
+  background: #fbbc05 !important;
+}
+
+/* 
 .MuiButton-root {
   width: 30px;
   height: 50px;
@@ -80,7 +103,7 @@ textarea {
 .MuiButton-root:hover .plus-sign {
   color: #fff;
   background: transparent;
-}
+} */
 
 .note {
   background: #fff;
@@ -126,4 +149,14 @@ textarea {
 
 .note .btn:hover .deleteIcon {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100vh;
+  }
+
+  .main_note {
+    margin: 40px 80px;
+  }
 }
